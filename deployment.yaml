@@ -4,15 +4,24 @@ metadata:
   name: hello-world
   labels:
     app: hello-world
+    app.kubernetes.io/instance: "a17cdc20-378b-4c57-b16a-91f8cdcb3dc1"
+    app.kubernetes.io/type: "testName-argo"
+    app.armada.ai/type: "testName-argo"
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: hello-world
+      app.kubernetes.io/instance: "a17cdc20-378b-4c57-b16a-91f8cdcb3dc1"
+      app.kubernetes.io/type: "testName-argo"
+      app.armada.ai/type: "testName-argo"
   template:
     metadata:
       labels:
         app: hello-world
+        app.kubernetes.io/instance: "a17cdc20-378b-4c57-b16a-91f8cdcb3dc1"
+        app.kubernetes.io/type: "testName-argo"
+        app.armada.ai/type: "testName-argo"
     spec:
       containers:
         - name: hello-world

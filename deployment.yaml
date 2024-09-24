@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: nginx
+          image: nginx:1.16
           ports:
             - containerPort: 80
           volumeMounts:
